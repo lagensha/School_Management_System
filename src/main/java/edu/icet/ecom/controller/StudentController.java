@@ -15,12 +15,14 @@ public class StudentController{
 
  @PostMapping("/Add")
     public void addStudents(@RequestBody StudentDTO studentDTO) {
-            studentService.addStudents(studentDTO);
+
+     studentService.addStudents(studentDTO);
     }
 
    @PostMapping("/Update")
     public void updateStudents(@RequestBody StudentDTO studentDTO) {
-        studentService.updateStudents(studentDTO);
+
+     studentService.updateStudents(studentDTO);
     }
 
    @DeleteMapping("/Delete-By-Id/{studentId}")
@@ -35,6 +37,7 @@ public class StudentController{
 
     @GetMapping("/GetAll")
     public List<StudentDTO> getAll() {
-        return studentService.getAll();
+
+     return studentService.getAll();
     }
 }
