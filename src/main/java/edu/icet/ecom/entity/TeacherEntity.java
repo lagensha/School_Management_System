@@ -11,17 +11,14 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Entity
-public class StudentEntity {
+public class TeacherEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer studentId;
+    private Integer teacherId;
     private String firstName;
     private String lastName;
-    private String dob;
-    private String gender;
-    private String address;
+    private String subjectSpecialization;
     private String phone;
     private String  email;
-    private String admissionDate;
-    private String  classId;
+    private String hireDate;
 }
