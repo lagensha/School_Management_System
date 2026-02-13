@@ -3,5 +3,5 @@ package edu.icet.ecom.repository;
 import edu.icet.ecom.entity.AttendanceEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AttendanceRepository extends JpaRepository<AttendanceEntity,Integer> {
+public interface AttendanceRepository extends JpaRepository<AttendanceEntity,Integer>{
 }
