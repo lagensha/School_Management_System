@@ -5,14 +5,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class ClassDTO {
-    private Integer classId;
-    private String className;
-    private String grade;
-    private String teacherId;
-
+public class ExamDTO {
+    private  String examId;
+    private  String name;
+    private String subjectId;
+    private String date;
+    private Integer totalMarks;
 }
